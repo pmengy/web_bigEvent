@@ -5,6 +5,7 @@
     "Prefilter",
     "reguser",
     "repassword",
-    "repwd"
+    "repwd",
+    "updatepwd"
   ]
 }
