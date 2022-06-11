@@ -7,6 +7,18 @@ function getUserInfo() {
       layer.msg(res.message);
       renderAvatar(res.data);
     },
+    // 不论成功还是失败，最终都会调用 complete 回调函数
+    // complete: (res) => {
+    //   if (
+    //     res.responseJSON.status === 1 &&
+    //     res.responseJSON.message === '身份认证失败！'
+    //   ) {
+    //     // 强制清空 token
+    //     localStorage.removeItem('token');
+    //     // 强制跳转到登录页面
+    //     location.href = '/login.html';
+    //   }
+    // },
   });
 }
 getUserInfo();
